@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: azure;
+}
+label{
+    width: 350px;
+    position: relative;
+    height: 150px;
+    cursor: pointer;
+}
+label input {
+    position: relative;
+    appearance: none;
+    z-index: 1;
+}
+label span {
+    position: absolute;
+    border-radius: 100px;
+    width: 100%;
+    left: 0;
+    top: 0rem;
+    height: 100%;
+    background-color: red;
+    transition: 0.5s;
+    box-shadow: 0 15px 25px rgba(235, 22, 22,1.43) ;
+}
+label input:checked ~ span{
+    background-color: rgb(90, 235, 97);
+    box-shadow: 0 15px 25px rgb(0, 202, 0);
+}
+label span i {
+    position: absolute;
+    width: 120px;
+    background-color: whitesmoke;
+    top: 17px;
+    left: 20px;transition: 0.5s;
+    border-radius: 50%;
+
+    height: 120px;
+}
+label input:checked ~ span i {
+    left: 60%;
+}
+label span i::before{
+    content: "";
+    position: absolute;
+    width: 20px;
+    border-radius: 50%;
+    background-color: red;
+    top: 40px;
+    left: 20px;
+    height: 20px;
+    box-shadow: 50px 0 0 red;
+}
+
+label input:checked ~ span i::before{
+    background-color: rgb(90, 235, 97);
+    box-shadow: 50px 0 0 rgb(90, 235, 97);
+}
+
+label span i::after{
+    position: absolute;
+    content: "";
+    top: 80px;
+    left: 25px;
+    border-radius: 20px;
+    width: 70px;
+    height: 10px;
+    background-color: red;
+}
+label input:checked ~ span i::after{
+    background-color: rgb(90, 235, 97);
+    border-radius: 0;
+    height: 30px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+
+}
