@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="../Css/all.css" />
+    <link rel="stylesheet" href="css/app.css" />
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        overflow: hidden;
+      }
+      .btn {
+        width: 100%;
+        padding: 14px 0;
+        background: linear-gradient(transparent, transparent);
+        cursor: pointer;
+        border: 1px solid white;
+        transition: 0.5s;
+
+        color: white;
+      }
+      .btn:hover {
+        transform: scale(1.02);
+        background: rgba(0, 0, 0, 0.54);
+      }
+      .box {
+        width: 100%;
+        background: url("../img/Jellyfish.jpg") center/cover no-repeat;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        color: white;
+        flex-direction: column;
+        overflow: hidden;
+        padding: 20px;
+
+        animation: animas 4s linear infinite;
+      }
+
+      .box h1 {
+        font-weight: 400;
+      }
+      .box-2 {
+        width: 100%;
+      }
+      .i {
+        cursor: pointer;
+        color: white;
+      }
+
+      footer {
+        margin-top: 30px;
+      }
+      .side {
+        width: 100%;
+        position: absolute;
+        left: -1%;
+        top: 88%;
+      }
+      .side ul {
+        list-style: none;
+        float: left;
+      }
+      .side ul li {
+        display: inline;
+        opacity: 0.2;
+        margin-left: 20px;
+      }
+      .side ul li a {
+        color: white;
+      }
+      .side ul li:hover {
+        opacity: 1;
+      }
+
+      .motivation {
+        margin-top: 40px;
+      }
+
+      .bar {
+        position: absolute;
+        right: 5%;
+        top: 5%;
+      }
+      .bar * {
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bar">
+      <a href=""><i class="fas fa-bars fa-2x"></i></a>
+    </div>
+
+    <div class="box flex-container">
+      <h1 class="">Welcome To My Site</h1>
+      <br />
+      <br />
+      <p class="">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea quasi a
+        accusamus mollitia repellat sequi tenetur illo placeat nemo dolorem
+        nisi, velit non sunt consequuntur reprehenderit dolor quae, cupiditate
+        similique. Debitis hic similique laborum tempora atque consequuntur
+        molestiae labore quod deleniti, cum molestias delectus odit ad iusto
+        fugiat vel perferendis!
+      </p>
+      <div class="box-2">
+        <button class="button primary float-left button">Sign in</button>
+        <button class="button float-right primary">Sign up</button>
+      </div>
+      <button class="btn">Started</button>
+      <footer>
+        <h2 class="text-center">Contact us on sosial media</h2>
+        <div class="grid-x grid-padding-x align-spaced text-center">
+          <div class="cell small-4 i"><i class="fab fa-twitter fa-2x"></i></div>
+          <div class="cell small-4 i">
+            <i class="fab fa-facebook fa-2x"></i>
+          </div>
+          <div class="cell small-4 i">
+            <a class="i" href="https://www.instagram.com/bilsyah07/">
+              <i class="fab instagram fa-instagram fa-2x"></i>
+            </a>
+          </div>
+        </div>
+        <div class="side">
+          <ul>
+            <li>
+              <a href=""><i class="fab fa-github fa-4x"></i> Report a Bug </a>
+            </li>
+          </ul>
+        </div>
+        <div class="motivation">
+          <h6 class="text-center">
+            <em
+              >" Programs must be written for people to read, and only
+              incidentally for machines to execute."</em
+            >
+          </h6>
+        </div>
+      </footer>
+    </div>
+
+    <!-- <div class="row">
+       Tepografy 
+      <h1 class="text-center">Hello World</h1>
+      <h2 class="text-center">Hello World</h2>
+      <h3 class="text-center">Hello World</h3>
+      <h4 class="text-center">Hello World</h4>
+      <h5 class="text-center">Hello World</h5>
+      <p class="lead">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime
+        pariatur sit soluta, fugiat error eius. Corporis, impedit ipsa quisquam
+        libero voluptatum cumque! Possimus nisi velit, voluptates, cum
+        aspernatur harum facere praesentium sequi, quis odit tempora eaque sed
+        ullam maxime excepturi dignissimos eveniet incidunt ea reprehenderit!
+        Omnis iusto dolores velit neque molestiae ipsam reiciendis vitae
+        laboriosam ullam ut voluptate officia mollitia debitis exercitationem,
+        quas explicabo amet sunt! Non totam quos illum autem debitis accusantium
+        velit veniam, pariatur perspiciatis vero quibusdam eius consequuntur,
+        consequatur commodi dolores soluta excepturi numquam incidunt temporibus
+        aspernatur ipsum! Quisquam debitis sunt, eaque dolorum architecto
+        facilis molestiae facere!
+      </p>
+    </div> -->
+    <script src="../Js/all.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+  </body>
+</html>
